@@ -64,5 +64,43 @@ const age = 30;
 // console.log(msg1);
 
 // テンプレート文字列を用いた方法
-const msg2 = `私の名前は${name}です。年齢は${age}歳です。`;
-console.log(msg2);
+// const msg2 = `私の名前は${name}です。年齢は${age}歳です。`;
+// console.log(msg2);
+
+/**
+ * アロー関数
+ */
+
+//  従来の関数定義
+// function func1(str) {
+//   return str;
+// }
+
+// const func1 = function(str) {
+//   return str;
+// };
+
+// console.log(func1("func1です"));
+
+// アロー関数を用いた関数定義
+// const func2 = (str) => {
+//   return str;
+// };
+
+// 引数が一つの場合は括弧を省略できる（フォーマッターの設定によっては自動補完される）
+// const func2 = (str) => {
+//   return str;
+// };
+
+// 処理が一行の場合は波括弧とreturnを省略できる
+// const func2 = (str) => str;
+
+// console.log("func2です");
+
+// const func3 = (num1, num2) => {
+//   return num1 + num2;
+// }
+
+const func3 = (num1, num2) => num1 + num2;
+
+console.log(func3(10, 20));
