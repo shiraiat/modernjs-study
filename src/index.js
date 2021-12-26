@@ -56,8 +56,8 @@
 /**
  * テンプレート文字列
  */
-const name = "あつし";
-const age = 30;
+// const name = "あつし";
+// const age = 30;
 
 // 従来の方法
 // const msg1 = "私の名前は" + name + "です。年齢は" + age + "歳です。";
@@ -101,6 +101,37 @@ const age = 30;
 //   return num1 + num2;
 // }
 
-const func3 = (num1, num2) => num1 + num2;
+// const func3 = (num1, num2) => num1 + num2;
 
-console.log(func3(10, 20));
+// console.log(func3(10, 20));
+
+/**
+ * 分割代入
+ */
+
+//  オブジェクト
+// const myProfile = {
+//   name: "あつし",
+//   age: 30,
+// };
+
+// 従来の方法
+// const msg1 = `私の名前は${myProfile.name}です。年齢は${myProfile.age}歳です。`;
+// console.log(msg1);
+
+// オブジェクトの分割代入
+// const { name, age } = myProfile;
+// const msg2 = `私の名前は${name}です。年齢は${age}歳です。`;
+// console.log(msg2);
+
+// 配列
+// const myProfile = ["あつし", 30];
+
+// 従来の方法
+// const msg3 = `私の名前は${myProfile[0]}です。年齢は${myProfile[1]}歳です。`;
+// console.log(msg3);
+
+// 配列の分割代入（配列の場合はプロパティ名でなく順番で値を受け取る）
+// const [name, age] = myProfile;
+// const msg4 = `私の名前は${name}です。年齢は${age}歳です。`;
+// console.log(msg4);
