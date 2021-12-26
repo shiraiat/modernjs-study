@@ -135,3 +135,21 @@
 // const [name, age] = myProfile;
 // const msg4 = `私の名前は${name}です。年齢は${age}歳です。`;
 // console.log(msg4);
+
+/**
+ * デフォルト値
+ */
+
+//  関数を呼び出す際に引数を渡していないとundefinedになる
+// const sayHello = (name) => {
+//   return `こんにちは！${name}さん！`;
+// };
+// こんにちは！undefinedさん！
+// console.log(sayHello());
+
+// 関数の引数にデフォルト値を設定
+// const sayHello = (name = "ゲスト") => {
+//   return `こんにちは！${name}さん！`;
+// };
+// こんにちは！ゲストさん！
+// console.log(sayHello());
